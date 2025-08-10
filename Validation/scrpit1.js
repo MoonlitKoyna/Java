@@ -1,6 +1,6 @@
 function validate(e){
     e.preventDefault();
-}
+
 
 const email = document.getElementById('email').value;
 const pass = document.getElementById('password').value;
@@ -23,3 +23,4 @@ if (email === ''){
     msgBox.style.color='green';
 }
 msgBox.innerText=message;
+}
