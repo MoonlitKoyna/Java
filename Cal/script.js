@@ -14,7 +14,7 @@ function calculateResult(){
 if (expression === ""){
     resultElement.value = "Enter an expression";
     return;
-}
+}            
 
 try{
     resultElement.value = eval(expression);
