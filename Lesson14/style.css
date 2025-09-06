@@ -1,0 +1,34 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e27602;
+}
+
+.button button {
+margin: 5px;
+padding: 10px 15px;
+border: none;
+border-radius: 10px;
+background: #ff69b4;
+color: white;
+cursor: pointer;
+}
+
+.button:hover {
+background: #ff4da6;
+}
+
+footer {
+background: #fff0f7;
+padding: 20px;
+margin-top: 50px;
+color: #d63384;
+}
+
+footer .social a {
+text-decoration: none;
+color: #ff69b4;
+margin: 0 5px;
+}
