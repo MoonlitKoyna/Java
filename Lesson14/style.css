@@ -6,7 +6,7 @@ body{
     background-color: #e27602;
 }
 
-.button button {
+.button btn {
 margin: 5px;
 padding: 10px 15px;
 border: none;
@@ -16,7 +16,7 @@ color: white;
 cursor: pointer;
 }
 
-.button:hover {
+.btn:hover {
 background: #ff4da6;
 }
 
