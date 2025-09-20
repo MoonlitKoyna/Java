@@ -3,10 +3,10 @@ function getHistory(){
 }
 
 function printHistory(num){
-    document.getElementById("history-value").innerText;
+    document.getElementById("history-value").innerText= num;
 }
 
-function getOutput(){
+function getOutput(num){
     return document.getElementById("output-value").innerText;
 }
 
@@ -23,7 +23,7 @@ function getFormattedNumber(num){
     if (num=="-"){
         return "";
     }
-    var n= number(num);
+    var n= Number(num);
     var value=n.toLocaleString("en");
     return value;
 }
@@ -70,9 +70,9 @@ for (var i=0; i< operator.length; i++){
     }
     });
 }
-var Number=document.getElementsByClassName("number");
-for(var i=0; i < Number.length; i++){
-    Number[i].addEventListener('click', function(){
+var number=document.getElementsByClassName("number");
+for(var i=0; i < number.length; i++){
+    number[i].addEventListener('click', function(){
         var output= reverseNumberFormat(getOutput());
         if(output !=NaN){
             output=output+this.id;
