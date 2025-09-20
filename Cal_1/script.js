@@ -2,7 +2,7 @@ function getHistory(){
     return document.getElementById("history-value").innerText;
 }
 
-function printHistory(){
+function printHistory(num){
     document.getElementById("history-value").innerText;
 }
 
@@ -70,11 +70,11 @@ for (var i=0; i< operator.length; i++){
     }
     });
 }
-var number=document.getElementsByClassName("number");
-for(var i=0; i < number.length; i++){
-    number[i].addEventListener('click', function(){
+var Number=document.getElementsByClassName("number");
+for(var i=0; i < Number.length; i++){
+    Number[i].addEventListener('click', function(){
         var output= reverseNumberFormat(getOutput());
-        if(output !=Nan){
+        if(output !=NaN){
             output=output+this.id;
             printOutput(output);
         }
